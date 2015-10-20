@@ -11,7 +11,7 @@ if (NOT MSVC)
     set (COMPILER_PREFIX "${PLATFORM}-w64-mingw32")
     set (CMAKE_C_COMPILER "${COMPILER_PREFIX}-gcc")
     set (CMAKE_CXX_COMPILER "${COMPILER_PREFIX}-g++")
-    set (CMAKE_RC_COMPILER "${COMPILER_PREFIX}-windres")
+    set (CMAKE_RC_COMPILER "windres")
     set (CMAKE_AR "ar")
     set (CMAKE_RANLIB "ranlib")
 
