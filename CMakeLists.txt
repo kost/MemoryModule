@@ -12,7 +12,7 @@ if (NOT MSVC)
     set (CMAKE_C_COMPILER "${COMPILER_PREFIX}-gcc")
     set (CMAKE_CXX_COMPILER "${COMPILER_PREFIX}-g++")
     set (CMAKE_RC_COMPILER "${COMPILER_PREFIX}-windres")
-    set (CMAKE_AR "${COMPILER_PREFIX}-ar")
+    set (CMAKE_AR "ar")
     set (CMAKE_RANLIB "${COMPILER_PREFIX}-ranlib")
 
     set (CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
