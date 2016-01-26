@@ -428,9 +428,9 @@ static void _FreeLibrary(HCUSTOMMODULE module, void *userdata)
     FreeLibrary((HMODULE) module);
 }
 
-HMEMORYMODULE MemoryLoadLibrary(const void *data)
+HMEMORYMODULE MemoryLoadLibrary(const void *data, const char * argv[])
 {
-    return MemoryLoadLibraryEx(data, _LoadLibrary, _GetProcAddress, _FreeLibrary, NULL);
+    return MemoryLoadLibraryEx(data, _LoadLibrary, _GetProcAddress, _FreeLibrary, argv);
 }
 
 HMEMORYMODULE MemoryLoadLibraryEx(const void *data,
