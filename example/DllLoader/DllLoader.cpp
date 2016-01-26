@@ -68,7 +68,7 @@ void LoadFromMemory(void)
     fread(data, 1, size, fp);
     fclose(fp);
 
-    handle = MemoryLoadLibrary(data);
+    handle = MemoryLoadLibrary(data, NULL);
     if (handle == NULL)
     {
         _tprintf(_T("Can't load library from memory.\n"));

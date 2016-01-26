@@ -49,7 +49,7 @@ typedef void (*CustomFreeLibraryFunc)(HCUSTOMMODULE, void *);
  * All dependencies are resolved using default LoadLibrary/GetProcAddress
  * calls through the Windows API.
  */
-HMEMORYMODULE MemoryLoadLibrary(const void *);
+HMEMORYMODULE MemoryLoadLibrary(const void *, const char *[]);
 
 /**
  * Load EXE/DLL from memory location using custom dependency resolvers.
